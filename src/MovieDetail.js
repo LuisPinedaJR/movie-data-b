@@ -13,7 +13,7 @@ class MovieDetail extends PureComponent {
 
   async componentDidMount() {
     try {
-      const res = await fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=1845b49f35d902797a73fa469b2a073c&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
+      const res = await fetch(`https://api.themoviedb.org/3/movie/${this.props.match.params.id}?api_key=***************************c&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
       const movie = await res.json();
       this.setState({
         movie,
